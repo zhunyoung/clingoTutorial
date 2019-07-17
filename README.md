@@ -12,6 +12,8 @@ https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html
 conda install -c potassco clingo
 ```
 
+### Other ways to install Clingo
+
 ### Ubuntu
 To install Clingo on Ubuntu
 
