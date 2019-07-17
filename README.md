@@ -1,7 +1,44 @@
 # clingoTutorial
-A tutorial for CSE259 students to get started with Clingo
+A tutorial for students to get started with Clingo
 
 ## Installation and Hello World Example
+
+### Easiest Way for Any System
+1. Install either Anaconda or Miniconda according to the following link
+https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html
+
+2. Install Clingo by copying and pasting the following command in a terminal prompt.
+```
+conda install -c potassco clingo
+```
+
+### Ubuntu
+To install Clingo on Ubuntu
+
+Copy and paste the following commands in a terminal prompt.
+```
+sudo apt-get update
+sudo apt-get install gringo
+```
+
+### Mac OS
+To install Clingo on Mac OS
+
+1. Install brew: copy and paste the following command in a macOS Terminal prompt.
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+2. Install the Xcode Command Line Tools by executing the following command in a macOS Terminal prompt.
+```
+xcode-select --install
+```
+Then click “Install” to download and install the Xcode Command Line Tools.
+
+3. Install Clingo by executing the following command.
+```
+brew install clingo
+```
 
 ### Windows
 To download Clingo on Windows system
