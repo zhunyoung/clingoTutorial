@@ -7,7 +7,13 @@ A tutorial for students to get started with Clingo
 1. Install either Anaconda or Miniconda according to the following link
 https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html
 
-2. Install Clingo by copying and pasting the following command in a terminal prompt.
+2. Create a virtual environment with python 3.6, and activate it
+```
+conda create -n py3.6 python=3.6
+conda activate py3.6
+```
+
+3. Install Clingo by copying and pasting the following command in a terminal prompt.
 ```
 conda install -c potassco clingo
 ```
