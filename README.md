@@ -51,8 +51,9 @@ brew install clingo
 ### Windows
 To download Clingo on Windows system
 
-1. Download Clingo (compressed in an .zip file) from the following link. This .zip file is also available from this repo.
-https://github.com/potassco/clingo/releases/download/v5.3.0/clingo-5.3.0-win64.zip
+1. Download Clingo (compressed in an .zip file) from the following link. This .zip file is also available in this repo.
+https://github.com/potassco/clingo/releases/download/v5.4.0/clingo-5.4.0-win64.zip
+
 
 2. Extract Compressed Folders in "clingo-5.3.0-win64.zip" to your preferred path, e.g.,
 ```
@@ -63,7 +64,7 @@ To run Clingo on an example clingo program stored in "test.txt"
 
 1. Write your clingo program in a .txt file in the clingo folder. The path to an example .txt file could be 
 ```
-C:\Users\zyang90\Downloads\clingo-5.3.0-win64\test.txt
+C:\Users\zyang90\Downloads\clingo-5.4.0-win64\test.txt
 ```
 where the file "test.txt" contains the following rule.
 ```
@@ -72,7 +73,7 @@ where the file "test.txt" contains the following rule.
 
 2. Open a "Command Prompt" and cd to the clingo folder. An example command line is as below, while you need to modify the path accordingly.
 ```
-cd C:\Users\zyang90\Downloads\clingo-5.3.0-win64
+cd C:\Users\zyang90\Downloads\clingo-5.4.0-win64
 ```
 
 3. Finally, you can execute the following command to find all stable models of the Clingo program stored in "test.txt".
