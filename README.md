@@ -1,9 +1,9 @@
 # clingoTutorial
 A tutorial for students to get started with Clingo
 
-## Installation and Hello World Example
+## Installation
 
-### Easiest Way for Any System
+### Easiest Way for Any System (Recommanded)
 1. Install either Anaconda or Miniconda according to the following link
 https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html
 
@@ -19,7 +19,7 @@ conda install -c potassco clingo
 ```
 
 ### Other ways to install Clingo
-
+Below, we show how to install Clingo on different systems.
 ### Ubuntu
 To install Clingo on Ubuntu
 
@@ -60,23 +60,40 @@ https://github.com/potassco/clingo/releases/download/v5.4.0/clingo-5.4.0-win64.z
 C:\Users\zyang90\Downloads\
 ```
 
-To run Clingo on an example clingo program stored in "test.txt"
-
-1. Write your clingo program in a .txt file in the clingo folder. The path to an example .txt file could be 
-```
-C:\Users\zyang90\Downloads\clingo-5.4.0-win64\test.txt
-```
-where the file "test.txt" contains the following rule.
+## Hello World Example
+Consider a Clingo program 
 ```
 1{p(1..6)}.
 ```
+which says that "p(1), p(2), ..., p(6) are possibly true AND at least one of them is true". Depending on your OS, you can follow the steps below to use Clingo to find all (or a specific number of) its stable models. 
 
-2. Open a "Command Prompt" and cd to the clingo folder. An example command line is as below, while you need to modify the path accordingly.
+### Linux or Mac OS
+1. Save the Clingo program in a file, say "test.txt", in a folder and remember the path to this file. Say the path is as follows.
+```
+~\Downloads\test.txt
+```
+2. Open a terminal.
+3. Execute the following command line to get all stable models of this Clingo program.
+```
+clingo ~\Downloads\test.txt 0
+```
+In the above command, 0 means that we require Clingo to output all stable models. If you don't put this 0, by default, Clingo will only output one stable model and terminate. You can also set this number to, say, 3 to let Clingo to output 3 stable models (if there exist) and then terminate.
+### Windows
+Suppose the path to the Clingo package is as follows. 
+```
+C:\Users\zyang90\Downloads\clingo-5.4.0-win64
+```
+You may use the following steps to execute Clingo on the example program.
+1. Save the Clingo program in a file, say "test.txt", in the Clingo package folder. The path to the file "test.txt" is as follows.
+```
+C:\Users\zyang90\Downloads\clingo-5.4.0-win64\test.txt
+```
+2. Open a "Command Prompt".
+3. cd to the Clingo folder. 
 ```
 cd C:\Users\zyang90\Downloads\clingo-5.4.0-win64
 ```
-
-3. Finally, you can execute the following command to find all stable models of the Clingo program stored in "test.txt".
+4. Execute the following command line to get all stable models of this Clingo program.
 ```
 clingo.exe test.txt 0
 ```
