@@ -3,7 +3,7 @@ A tutorial for students to get started with Clingo
 
 ## Installation
 
-### Easiest Way for Any System (Recommanded)
+### Easiest Way for Any System (Recommended)
 1. Install either Anaconda or Miniconda according to the following link
 https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html
 
